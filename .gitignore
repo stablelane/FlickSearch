@@ -1,0 +1,4 @@
+# ignore the compiled executable
+cli-tool 
+# ignore the Go module file
+go.mod
