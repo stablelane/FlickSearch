@@ -60,7 +60,7 @@ func main() {
 
 		// Access each movie in the Search array
 		for _, movie := range response.Search {
-			movies = append(movies, fmt.Sprintf("Title: %s, Year: %s, IMDb ID: %s, Type: %s", movie.Title, movie.Year, movie.ImdbID, movie.Type))
+			movies = append(movies, onlyMovieType(movie))
 		}
 		// fmt.Println(movies)
 
@@ -80,6 +80,17 @@ func main() {
 	}
 
 }
+
+
+//function to only append movie type object to movies slice
+func onlyMovieType(item Movie) string {
+	if item.Type == "movie" {
+		return fmt.Sprintf("Title: %s, Year: %s, IMDb ID: %s, Type: %s", item.Title, item.Year, item.ImdbID, item.Type)
+		
+	}
+	return ""
+}
+
 
 // function to check the OS of evironment and open browser with the link using the imdbId as query
 func openLink(id string) error {
