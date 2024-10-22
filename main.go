@@ -60,7 +60,10 @@ func main() {
 
 		// Access each movie in the Search array
 		for _, movie := range response.Search {
-			movies = append(movies, onlyMovieType(movie))
+			movieString := onlyMovieType(movie)
+			if movieString != "" {
+				movies = append(movies, movieString)
+			}
 		}
 		// fmt.Println(movies)
 
