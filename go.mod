@@ -1,4 +1,4 @@
-module cli-tool
+module flickserach
 
 go 1.23.2
 
