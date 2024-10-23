@@ -9,6 +9,12 @@
 - **Automatically opens the selected movie's streaming link** in your default browser.
 - Works on **Linux**, **macOS**, and **Windows**.
 
+## Prerequisites
+
+Before you begin, ensure you have [Go](https://golang.org/dl/) installed on your machine. You can download and install Go from the official Go website.
+
+- **Go version**: Make sure you have Go version 1.16 or later installed.
+
 ## Installation
 
 1. **Clone the repository**:
