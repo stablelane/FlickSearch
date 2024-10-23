@@ -1,4 +1,4 @@
-module flickserach
+module flicksearch
 
 go 1.23.2
 
